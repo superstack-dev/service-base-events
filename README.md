@@ -1,2 +1,3 @@
-# pyservice-events
-Event data model for pyservice.
+# service-base-events
+
+Event data model for service-base.

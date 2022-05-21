@@ -7,7 +7,7 @@ except ImportError:  # pip >= 10.0.0
     from pip._internal.req import parse_requirements
 from setuptools import find_packages
 
-PACKAGE_NAME = "pyservice_events"
+PACKAGE_NAME = "service_base_events"
 
 
 def get_requirements(filename: str) -> List[str]:
@@ -26,7 +26,7 @@ def get_version() -> str:
 setup(
     name=PACKAGE_NAME,
     version=get_version(),
-    description="Event data model for pyservice.",
+    description="Event data model for service-base.",
     author="SuperStack, Zilberman Rafael",
     packages=find_packages(include=[PACKAGE_NAME, f"{PACKAGE_NAME}.*"]),
     include_package_data=True,
